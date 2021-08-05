@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Image Generate on Page load</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h3>Random image in every 5 seconds</h3>
+            <p>click on the button for new image</p>
+            <button onclick="refresh()">random image</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    function refresh(){
+        window.location.reload();
+    }
+
+    setInterval(refresh, 5000);
+
+</script>
+</html>
